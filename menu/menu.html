@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="/menu/strle.css">
+  </head>
+  <body class="font-serif">
+      <nav class="md:flex md:justify-between bg-black fixed w-full ">
+    <div class="flex items-center p-4">
+      <a class="text-white font-bold text-xs hover:underline" href="/src/Home.html">JAI FOOD</a>
+      <button id="menu-btn" class="text-white block md:hidden focus:outline-none ml-auto">
+        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path>
+        </svg>
+      </button>
+    </div>
+    <ul id="menu" class="hidden flex-col md:flex md:flex-row md:items-center md:space-x-4 bg-black md:bg-transparent w-full md:w-auto absolute top-full left-0 md:static">
+      <li class="mx-2">
+        <a href="/menu/menu.html" class="block text-white hover:underline py-2 px-4">Menu</a>
+      </li>
+      <li class="mx-2">
+        <a href="/about/About.html" class="block text-white hover:underline py-2 px-4">About</a>
+      </li>
+      <li class="mx-2">
+        <a href="/booking/book.html" class="block text-white hover:underline py-2 px-4">Book It</a>
+      </li>
+    </ul>
+  </nav>
+  <script>
+    const menuBtn = document.getElementById('menu-btn');
+    const menu = document.getElementById('menu');
+
+    menuBtn.addEventListener('click', () => {
+      menu.classList.toggle('hidden');
+    });
+  </script> 
+
+ 
+  
+  <div>
+      <div class=" lg:pt-40 sm:pt-20  p-10">
+        <h2 class="text-black mt-10 text-center md:text-4xl lg:text-4xl text-2xl">
+          A LA CARTE MENU
+        </h2>
+      </div>
+      <div>
+   
+      <div class="bg-gray-300 p-11 h-auto">
+  <div class="md:flex lg:flex sm:grid justify-center lg gap-20">
+    <div>
+      <p class="font-bold text-sm">FRESH BAGELS </p><br>
+      <p class="lg:w-80 sm:w-auto text-sm">
+        Our signature bagel with a selection of toppings, from cream cheese to avocado
+      </p>
+      <P>PRICE: 1.99$ </P>
+      <br> 
+      <div>
+        <p class="font-bold text-sm">OVERNIGHT OATS</p><br>
+        <p class="lg:w-80 sm:w-auto text-sm">Oats soaked in almond milk overnight, served with local jams and fresh berries</p>
+        <p> PRICE:  1.99$</p>
+
+      </div>
+      <br>
+      <div>
+        <p class="font-bold  text-sm">GREEN SMOOTHIE</p><br>
+          <p class="lg:w-80 sm:w-auto text-sm">Organic celery, apple juice, spinach, bananas, and seasonal berries</p>
+        <p>PRICE: 1.99$</p>
+      </div>
+      
+    </div>
+    
+    <div>
+      <p class="font-bold text-sm">SPLIT LENTIL SOUP</p><br>
+      <p class="lg:w-80 sm:w-auto text-sm">Homemade lentil soup, served with fresh sourdough bread </p>
+      <p>PRICE: 1.99$</p>
+    <div>
+      <br>
+            <p class="font-bold text-sm">GRILLED VEGETABLE SALAD</p><br>
+                  <p class="lg:w-80 sm:w-auto text-sm">Grilled peppers, aubergine, and tomatoes served over a fresh salad base</p>
+                  <p>PRICE: 1.99$</p>
+    </div>
+    <br>
+    <div>
+                <p class="font-bold text-sm">VEGETABLE LASAGNE</p><br>
+                 <p class="lg:w-80 sm:w-auto text-sm">Our lunchtime best-seller, made with homemade pasta and organic tomato sauce </p>
+                 <p>PRICE: 1.99$</p>
+    </div>
+
+  </div>
+  
+      </div>
+<div class="lg:pt-40 lg:mt-16 mt-8">
+  <a href="/src/booking/book.html" class="block lg:mx-auto lg:text-center text-left">
+    <button
+      class="bg-black text-white hover:bg-slate-300 hover:text-black font-bold py-2 px-4 rounded transition duration-300"
+    > 
+      BOOK A TABLE
+    </button>
+  </a>
+</div>
+  </div>
+   <div class=" p-2 lg:flex md:flex sm:grid justify-around ">
+      <div ><img class="size-80 h-full w-96" src="/src/picture/pic13.jpg" alt=""></div>
+      <div class="pt-32">
+        <h2 class=" font-bold md:text-2xl">NUTRITIOUS FOOD</h2>
+        <p class="lg:w-64 text-sm lg:pt-6 md:w-60 sm:w-50  ">We Are A Certified Non-GMO Restaurant, And Can Proudly Say That All The Fresh Produce Is GMO-Free. 
+          This Means That You Can Relax And Enjoy Yourself, And If You Have Any Questions, Feel Free To Ask Our Staff. <br><br>Since The Conception Of Jai, We Are On A First-Name Basis With All Of Our Suppliers.  </p>
+                <div class="pt-4">
+  <a href="/about/About.html" class="inline-block">
+    <button
+      class="bg-black text-white hover:bg-slate-300 hover:text-black  py-2 px-4 rounded transition duration-300 lg:block mx-auto lg:text-center"
+    > 
+      About us
+    </button>
+  </a>
+</div>
+      </div>
+      </div>
+        <div class="bg-black h-auto p-10 text-white">
+        <div class="lg:flex md:flex sm:grid-flow-row justify-around">
+          <div>
+            <h3 class="text-2xl font-bold">WORKING HOURS</h3>
+            <br />
+            <p class="md:text-1xl lg:text-sm md:w-44">
+              56C Gimblinton Street, New York city, United States
+            </p>
+            <br />
+            <p class="md:text-1xl lg:text-sm md:w-44">
+              Monday - Friday 6:00 am to 9:00 pm
+            </p>
+            <br />
+            <p class="md:text-1xl lg:text-sm md:w-44">
+              Saturday - Sunday 10:00 am to 8:00 pm
+            </p>
+            <br />
+          </div>
+          <div>
+            <h2 class="text-2xl font-bold">GOT A QUESTION?</h2>
+            <br />
+            <p class="md:text-1xl lg:text-sm md:w-44">Contact: 123-456-7890</p>
+            <br />
+            <p class="md:text-1xl lg:text-sm md:w-44">
+              Visit us: 56C Gimblinton Street, New York City, United States
+            </p>
+            <br />
+            <div class="flex">
+              <a href="https://www.instagram.com/">
+                <img
+                  class="w-full p-1 h-8 object-cover sm:w-6 md:w-8 lg:w-10"
+                  src="/src/picture/9.png"
+                  alt=""
+              /></a>
+              <a href="https://www.facebook.com">
+                <img
+                  class="w-full p-1 h-8 object-cover sm:w-6 md:w-8 lg:w-10"
+                  src="/src/picture/pic10.png"
+                  alt=""
+              /></a>
+              <a href="https://x.com/">
+                <img
+                  class="w-full bg-white h-8 object-cover sm:w-6 md:w-8 lg:w-10"
+                  src="/src/picture/pic11.png"
+                  alt=""
+              /></a>
+            </div>
+          </div>
+        </div>
+      </div>
+      </div>
+      
+  </body>
+</html>

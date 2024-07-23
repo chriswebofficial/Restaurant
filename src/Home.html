@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="./output.css" rel="stylesheet" />
+    <link rel="stylesheet" href="/style.css" />
+  </head>
+<body>
+  
+
+  <nav class="md:flex md:justify-between bg-black fixed w-full ">
+    <div class="flex items-center p-4">
+      <a class="text-white font-bold text-xs hover:underline" href="/src/Home.html">JAI FOOD</a>
+      <button id="menu-btn" class="text-white block md:hidden focus:outline-none ml-auto">
+        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path>
+        </svg>
+      </button>
+    </div>
+    <ul id="menu" class="hidden flex-col md:flex md:flex-row md:items-center md:space-x-4 bg-black md:bg-transparent w-full md:w-auto absolute top-full left-0 md:static">
+      <li class="mx-2">
+        <a href="/menu/menu.html" class="block text-white hover:underline py-2 px-4">Menu</a>
+      </li>
+      <li class="mx-2">
+        <a href="/about/About.html" class="block text-white hover:underline py-2 px-4">About</a>
+      </li>
+      <li class="mx-2">
+        <a href="/booking/book.html" class="block text-white hover:underline py-2 px-4">Book It</a>
+      </li>
+    </ul>
+  </nav>
+  <script>
+    const menuBtn = document.getElementById('menu-btn');
+    const menu = document.getElementById('menu');
+
+    menuBtn.addEventListener('click', () => {
+      menu.classList.toggle('hidden');
+    });
+  </script> 
+
+
+
+
+
+
+    <div>
+      <div class="back">
+        <h2
+          class="pt-20 text-2xl sm:text-3xl md:text-4xl lg:text-6xl text-white pl-4 sm:pl-8 md:pl-10 max-w-xl mx-auto md:mx-0"
+        >
+          JAI RESTAURANT VEGETARIAN SOUL FOOD
+        </h2>
+        <p
+          class="text-white p-4 sm:p-6 mt-8 sm:mt-10 md:mt-16 opacity-80 bg-black rounded-lg w-full sm:w-3/4 md:w-2/3 lg:w-1/2 mx-auto md:ml-8"
+        >
+          A Pioneer In Organic And Plant-Based Cuisine. All Of Our Produce Is
+          Locally Sourced And We Donate 20% Of All Of Our Proceedings To Support
+          Local Charitable Causes.
+        </p>
+      </div>
+
+      <div class="bg-black h-auto p-9">
+        <h2
+          class="text-white text-center pt-16 md:text-3xl text-2xl lg:text-5xl"
+        >
+          FRESH DAILY
+        </h2>
+        <p class="text-white m-auto lg:w-2/4 text-center mt-7 sm:w-auto">
+          Our in-house chefs use only the finest ingredients and prepare all of
+          our dishes fresh every day. To do our bit for the environment and
+          avoid food waste, we aim to only prepare a fixed amount of breakfast
+          and lunch items. When it’s gone, it’s gone!
+        </p>
+
+        <div class="text-center mt-10">
+          <a href="/src/booking/book.html" class="inline-block">
+            <button
+              class="bg-white text-black hover:bg-slate-300 font-bold py-2 px-4 rounded transition duration-300"
+            >
+              BOOK A TABLE
+            </button>
+          </a>
+        </div>
+      </div>
+
+      <div class="orange"></div>
+      <div
+        class="min-h-screen flex flex-col md:flex-row justify-center items-center pt-8 px-4 md:px-0"
+      >
+        <img
+          class="w-full md:w-2/5 lg:w-1/3 mt-8 md:mt-0 md:mr-8"
+          src="/src/picture/5.jpg"
+          alt="Community Image"
+        />
+        <div class="pt-8 md:pt-16 mt-8 md:mt-0 text-center md:text-left">
+          <h2 class="font-bold text-2xl md:text-4xl">COMMUNITY</h2>
+          <p class="w-full md:w-96 m-auto mt-4">
+            Over the years, we have become more and more involved with the local
+            community. We regularly sponsor schools, organize evening courses
+            and events, and run special discounts over the holiday periods.
+            We’re always open to new ideas and suggestions.
+          </p>
+          <div class="mt-10">
+            <a
+              href="mailto:someone@example.com?subject=Hello%20from%20your%20website&body=Hi%20there!"
+              class="inline-block"
+            >
+              <button
+                class="bg-black text-white hover:bg-slate-300 hover:text-black  py-2 px-4 rounded transition duration-300"
+              >
+                Contact us
+              </button>
+            </a>
+          </div>
+        </div>
+      </div>
+      <div class="p-4 mx-auto max-w-screen-lg">
+        <h2 class=" text-center text-3xl lg:pt-9 sm:text-4xl md:text-5xl font-bold">
+          OUR TOP PICKS
+        </h2>
+        <div
+          class="lg:flex justify-around lg:pt-3 mt-8 lg:mt-12 space-y-8 lg:space-y-0"
+        >
+          <div class="lg:w-1/3 text-center lg:text-left">
+            <h2 class="font-bold  lg:text-2xl">GREEN SMOOTHIE</h2>
+            <p class="mt-2 lg:w-full">
+              Organic Celery, Apple Juice, Spinach, Bananas, And Seasonal
+              Berries
+            </p>
+          </div>
+          <div class="lg:w-1/3 text-center lg:text-left">
+            <h2 class="font-bold   lg:text-2xl">BREAKFAST PLATTER</h2>
+            <p class="mt-2 lg:w-full">
+              A Selection Of Artisan Bread, Continental Cheeses, And Vegetable
+              Toppings
+            </p>
+          </div>
+        </div>
+        <div class="text-center lg:pt-4 mt-8 lg:mt-16">
+          <a href="#" class="inline-block">
+            <button
+              class="bg-black text-white hover:bg-slate-300 hover:text-black  py-2 px-4 rounded transition duration-300"
+            >
+              VIEW THE MENU
+            </button>
+          </a>
+        </div>
+      </div>
+
+      <video autoplay loop muted plays-inline class="s3">
+        <source src="/video/3195650-uhd_3840_2160_25fps.mp4" />
+      </video>
+
+      <div class="s4 p-3">
+        <h2 class="md:ml-56 font-bold  text-3xl md:pt-36">JAI’S SOUL FOOD</h2>
+        <div class="lg:flex justify-around sm:flex sm:justify-around pt-16">
+          <div>
+            <h3 class="font-bold text-base">TASTE OF HOME</h3>
+            <p class="lg:w-96 ">
+              We believe that good food should transport you back to the safety
+              and comfort of your home. That’s why we use traditional recipes,
+              passed down in our families.
+            </p>
+          </div>
+          <div>
+            <h3 class="font-bold text-base">SUPPORTING FARMERS</h3>
+            <p class="lg:w-96">
+              In the current political climate of mass-production, we want to do
+              our bit to support local farmers and only buy directly from small
+              organic farms.
+            </p>
+          </div>
+        </div>
+        <div class="flex justify-around m-auto pt-9"></div>
+        <div class="pt-10 lg:pl-52">
+          <a href="#" class="inline-block">
+            <button
+              class="bg-black text-white hover:bg-slate-300 hover:text-black font-bold py-2 px-4 rounded transition duration-300"
+            >
+              CALL US
+            </button>
+          </a>
+        </div>
+      </div>
+
+      <div
+        class="bg-white m-auto p-6 sm:p-8 md:p-10 lg:p-12 xl:p-16 max-w-xs sm:max-w-sm md:max-w-md lg:max-w-lg xl:max-w-2xl"
+      >
+        <h2
+          class="text-black  text-xl sm:text-2xl md:text-3xl lg:text-4xl xl:text-5xl leading-tight"
+        >
+          FOOD SHOULDN’T BE COMPLICATED: LET US TAKE YOU BACK TO THE CAREFREE
+          DAYS OF CHILDHOOD.
+        </h2>
+      </div>
+         <div class="bg-black h-auto p-10 text-white">
+        <div class="lg:flex md:flex sm:grid-flow-row justify-around">
+          <div>
+            <h3 class="text-2xl font-bold">WORKING HOURS</h3>
+            <br />
+            <p class="md:text-1xl lg:text-sm md:w-44">
+              56C Gimblinton Street, New York city, United States
+            </p>
+            <br />
+            <p class="md:text-1xl lg:text-sm md:w-44">
+              Monday - Friday 6:00 am to 9:00 pm
+            </p>
+            <br />
+            <p class="md:text-1xl lg:text-sm md:w-44">
+              Saturday - Sunday 10:00 am to 8:00 pm
+            </p>
+            <br />
+          </div>
+          <div>
+            <h2 class="text-2xl font-bold">GOT A QUESTION?</h2>
+            <br />
+            <p class="md:text-1xl lg:text-sm md:w-44">Contact: 123-456-7890</p>
+            <br />
+            <p class="md:text-1xl lg:text-sm md:w-44">
+              Visit us: 56C Gimblinton Street, New York City, United States
+            </p>
+            <br />
+            <div class="flex">
+              <a href="https://www.instagram.com/">
+                <img
+                  class="w-full p-1 h-8 object-cover sm:w-6 md:w-8 lg:w-10"
+                  src="/src/picture/9.png"
+                  alt=""
+              /></a>
+              <a href="https://www.facebook.com">
+                <img
+                  class="w-full p-1 h-8 object-cover sm:w-6 md:w-8 lg:w-10"
+                  src="/src/picture/pic10.png"
+                  alt=""
+              /></a>
+              <a href="https://x.com/">
+                <img
+                  class="w-full bg-white h-8 object-cover sm:w-6 md:w-8 lg:w-10"
+                  src="/src/picture/pic11.png"
+                  alt=""
+              /></a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

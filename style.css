@@ -1,0 +1,45 @@
+.back {
+  background: rgba(7, 7, 7, 0.7) url(/src/picture/7.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  height: 100vh;
+  background-blend-mode: overlay;
+  background-attachment: fixed;
+}
+.orange {
+  background: url(/src/picture/4.jpg);
+  height: 30vh;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  background-blend-mode: overlay;
+}
+
+video.s3 {
+  background-attachment: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 50vh;
+  object-fit: cover;
+  z-index: -1;
+}
+.s4 {
+  height: auto;
+}
+
+/* this style class is located on the book.html folder */
+.pepe {
+  background: url(/src/picture/8.jpg);
+  height: 30vh;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  background-blend-mode: overlay;
+}
+
+
+

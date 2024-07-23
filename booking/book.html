@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="/style.css" />
+    <title>Document</title>
+  </head>
+  <body class="font-serif">
+     <nav class="md:flex md:justify-between bg-black fixed w-full ">
+    <div class="flex items-center p-4">
+      <a class="text-white font-bold text-xs hover:underline" href="/src/Home.html">JAI FOOD</a>
+      <button id="menu-btn" class="text-white block md:hidden focus:outline-none ml-auto">
+        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path>
+        </svg>
+      </button>
+    </div>
+    <ul id="menu" class="hidden flex-col md:flex md:flex-row md:items-center md:space-x-4 bg-black md:bg-transparent w-full md:w-auto absolute top-full left-0 md:static">
+      <li class="mx-2">
+        <a href="/menu/menu.html" class="block text-white hover:underline py-2 px-4">Menu</a>
+      </li>
+      <li class="mx-2">
+        <a href="/about/About.html" class="block text-white hover:underline py-2 px-4">About</a>
+      </li>
+      <li class="mx-2">
+        <a href="/booking/book.html" class="block text-white hover:underline py-2 px-4">Book It</a>
+      </li>
+    </ul>
+  </nav>
+  <script>
+    const menuBtn = document.getElementById('menu-btn');
+    const menu = document.getElementById('menu');
+
+    menuBtn.addEventListener('click', () => {
+      menu.classList.toggle('hidden');
+    });
+  </script> 
+
+    <div>
+      <h2
+        class="pt-16 text-center font-bold text-2xl sm:text-3xl md:text-4xl xl:text-3xl"
+      >
+        RESERVE A TABLE
+      </h2>
+      <p class="text-center lg:w-96 lg:m-auto pt-12">
+        Sometimes lunchtime gets busy. Reserve your table today and avoid
+        disappointment!
+      </p>
+
+      <div class="pt-16">
+        <form
+          id="form"
+          class="max-w-sm sm:max-w-md lg:max-w-lg xl:max-w-xl mx-auto p-8"
+        >
+          <div class="mb-3">
+            <label for="name" class="block text-sm font-medium text-gray-700"
+              >Name</label
+            >
+            <input
+              type="text"
+              id="name"
+              class="bg-zinc-100 block w-full p-2 pl-10 text-sm text-gray-700"
+              placeholder="Enter your name"
+            />
+            <span id="name-error" style="color: red; font-size: 12px"></span>
+          </div>
+          <div class="mb-3">
+            <label for="phone" class="block text-sm font-medium text-gray-700"
+              >Last name</label
+            >
+            <input
+              type="tel"
+              id="phone"
+              class="bg-zinc-100 block w-full p-2 pl-10 text-sm text-gray-700"
+              placeholder="Enter your Last name "
+            />
+            <span id="phone-error" style="color: red; font-size: 12px"></span>
+          </div>
+          <div class="mb-3">
+            <label for="email" class="block text-sm font-medium text-gray-700"
+              >Email</label
+            >
+            <input
+              type="email"
+              id="email"
+              class="bg-zinc-100 block w-full p-2 pl-10 text-sm text-gray-700"
+              placeholder="Enter your email"
+            />
+            <span id="email-error" style="color: red; font-size: 12px"></span>
+          </div>
+          <div class="mb-3">
+            <label for="message" class="block text-sm font-medium text-gray-700"
+              >Message</label
+            >
+            <textarea
+              id="message"
+              class="bg-zinc-100 block w-full p-2 pl-10 text-sm text-gray-700"
+              placeholder="Enter your message"
+            ></textarea>
+            <span id="message-error" style="color: red; font-size: 12px"></span>
+          </div>
+          <a href="#" class="inline-block">
+            <button
+              class="bg-black text-white hover:bg-slate-300 hover:text-black font-bold py-2 px-4 rounded transition duration-300"
+            >
+              Submit
+            </button>
+          </a>
+        </form>
+      </div>
+
+      <div class="pepe">
+        <!--  -->
+      </div>
+
+        <div class="bg-black h-auto p-10 text-white">
+        <div class="lg:flex md:flex sm:grid-flow-row justify-around">
+          <div>
+            <h3 class="text-2xl font-bold">WORKING HOURS</h3>
+            <br />
+            <p class="md:text-1xl lg:text-sm md:w-44">
+              56C Gimblinton Street, New York city, United States
+            </p>
+            <br />
+            <p class="md:text-1xl lg:text-sm md:w-44">
+              Monday - Friday 6:00 am to 9:00 pm
+            </p>
+            <br />
+            <p class="md:text-1xl lg:text-sm md:w-44">
+              Saturday - Sunday 10:00 am to 8:00 pm
+            </p>
+            <br />
+          </div>
+          <div>
+            <h2 class="text-2xl font-bold">GOT A QUESTION?</h2>
+            <br />
+            <p class="md:text-1xl lg:text-sm md:w-44">Contact: 123-456-7890</p>
+            <br />
+            <p class="md:text-1xl lg:text-sm md:w-44">
+              Visit us: 56C Gimblinton Street, New York City, United States
+            </p>
+            <br />
+            <div class="flex">
+              <a href="https://www.instagram.com/">
+                <img
+                  class="w-full p-1 h-8 object-cover sm:w-6 md:w-8 lg:w-10"
+                  src="/src/picture/9.png"
+                  alt=""
+              /></a>
+              <a href="https://www.facebook.com">
+                <img
+                  class="w-full p-1 h-8 object-cover sm:w-6 md:w-8 lg:w-10"
+                  src="/src/picture/pic10.png"
+                  alt=""
+              /></a>
+              <a href="https://x.com/">
+                <img
+                  class="w-full bg-white h-8 object-cover sm:w-6 md:w-8 lg:w-10"
+                  src="/src/picture/pic11.png"
+                  alt=""
+              /></a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="/booking/book.js"></script>
+  </body>
+</html>
